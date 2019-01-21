@@ -2,21 +2,29 @@ package routers
 
 import (
 	"gin-example/config"
-	"gin-example/middleware"
+	_ "gin-example/docs"
+	"gin-example/routers/contorller"
 	"gin-example/routers/contorller/v1"
+	"gin-example/utils/upload"
 	"github.com/gin-gonic/gin"
+	"github.com/swaggo/gin-swagger"
+	"github.com/swaggo/gin-swagger/swaggerFiles"
+	"net/http"
 )
 
 func InitRouter() *gin.Engine {
 	rou := gin.New()
 	rou.Use(gin.Logger(), gin.Recovery())
-	gin.SetMode(config.RunMode)
+	gin.SetMode(config.ServerSetting.RunMode)
 
-	rou.GET("/auth", v1.GetAuth)
-
+	rou.POST("/auth", v1.GetAuth)
+	rou.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+	rou.POST("/upload", contorller.UploadImage)
+	//文件访问
+	rou.StaticFS("/images", http.Dir(upload.GetImageFullPath()))
 	//操作标签
 	contorllerTag := rou.Group("/controller/tag")
-	contorllerTag.Use(middleware.JWT())
+	//contorllerTag.Use(middleware.JWT())
 	{
 		//获取标签列表
 		contorllerTag.GET("/getTagList", v1.GetTags)
@@ -29,7 +37,7 @@ func InitRouter() *gin.Engine {
 	}
 	//操作文章
 	contorllerArticles := rou.Group("/controller/articles")
-	contorllerArticles.Use(middleware.JWT())
+	//contorllerArticles.Use(middleware.JWT())
 	{
 		//获取文章列表
 		contorllerArticles.GET("/getArticlesList", v1.GetArticlesList)

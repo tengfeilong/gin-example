@@ -1,0 +1,9 @@
+{"level":"info","ts":"2019-01-10T15:33:56.831+0800","caller":"v1/article.go:76","msg":"articles err","key":"state","err":"状态只允许0或1"}
+{"level":"info","ts":"2019-01-10T15:33:56.877+0800","caller":"v1/article.go:76","msg":"articles err","key":"tag_id","err":"标签ID必须大于0"}
+{"level":"info","ts":"2019-01-10T16:07:19.549+0800","caller":"v1/article.go:76","msg":"articles err","key":"state","err":"状态只允许0或1"}
+{"level":"info","ts":"2019-01-10T16:07:19.550+0800","caller":"v1/article.go:76","msg":"articles err","key":"tag_id","err":"标签ID必须大于0"}
+{"level":"info","ts":"2019-01-10T16:07:52.679+0800","caller":"v1/article.go:76","msg":"articles err","key":"state","err":"状态只允许0或1"}
+{"level":"info","ts":"2019-01-10T16:07:52.679+0800","caller":"v1/article.go:76","msg":"articles err","key":"tag_id","err":"标签ID必须大于0"}
+{"level":"info","ts":"2019-01-10T18:34:35.724+0800","caller":"v1/article.go:38","msg":"articles err","key":"id","err":"ID必须大于0"}
+{"level":"info","ts":"2019-01-11T17:15:08.428+0800","caller":"contorller/upload.go:42","msg":"upload err","err":"open runtime/upload/images/1c6919cab208a54e32fa673f57b314e8.jpg: The system cannot find the path specified."}
+{"level":"info","ts":"2019-01-11T17:19:49.602+0800","caller":"contorller/upload.go:42","msg":"upload err","err":"open ./filePath/upload/images/1c6919cab208a54e32fa673f57b314e8.jpg: The system cannot find the path specified."}

@@ -10,13 +10,13 @@ import (
 //var Log = log.New(config.Dir + "/log.log","gin_",log.Ldate|log.Ltime|log.Lshortfile)
 var Logger *zap.Logger
 
-func init() {
+func SetUp() {
 
 	log.SetFlags(log.Lshortfile | log.LstdFlags)
 
 	cfg := zap.NewProductionConfig()
-	cfg.OutputPaths = []string{config.Dir + "/log.log"}
-	cfg.ErrorOutputPaths = []string{config.Dir + "/err.log"}
+	cfg.OutputPaths = []string{config.AppSetting.LogSavePath + "/log.log"}
+	cfg.ErrorOutputPaths = []string{config.AppSetting.LogSavePath + "/err.log"}
 	cfg.EncoderConfig.EncodeTime = zapcore.ISO8601TimeEncoder
 	cfg.EncoderConfig.StacktraceKey = ""
 
