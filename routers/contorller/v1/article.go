@@ -27,8 +27,9 @@ func GetArticle(c *gin.Context) {
 	code := msg.INVALID_PARAMS
 	var data interface{}
 	if !valid.HasErrors() {
-		if models.ExistArticleByID(id) {
-			data = models.GetArticle(id)
+
+		if b, _ := models.ExistArticleByID(id); b {
+			data, _ = models.GetArticle(id)
 			code = msg.SUCCESS
 		} else {
 			code = msg.ERROR_NOT_EXIST_ARTICLE
@@ -76,9 +77,10 @@ func GetArticlesList(c *gin.Context) {
 	code := msg.INVALID_PARAMS
 	if !valid.HasErrors() {
 		code = msg.SUCCESS
-
-		data["lists"] = models.GetArticleList(util.GetPage(c), config.AppSetting.PageSize, maps)
-		data["total"] = models.GetArticleTotal(maps)
+		lists, _ := models.GetArticles(util.GetPage(c), config.AppSetting.PageSize, maps)
+		total, _ := models.GetArticleTotal(maps)
+		data["lists"] = lists
+		data["total"] = total
 
 	} else {
 		for _, err := range valid.Errors {
@@ -190,7 +192,7 @@ func EditArticle(c *gin.Context) {
 
 	code := msg.INVALID_PARAMS
 	if !valid.HasErrors() {
-		if models.ExistArticleByID(id) {
+		if b, _ := models.ExistArticleByID(id); b {
 			if models.ExistTagByID(tagId) {
 				data := make(map[string]interface{})
 				if tagId > 0 {
@@ -246,7 +248,7 @@ func DeleteArticle(c *gin.Context) {
 
 	code := msg.INVALID_PARAMS
 	if !valid.HasErrors() {
-		if models.ExistArticleByID(id) {
+		if b, _ := models.ExistArticleByID(id); b {
 			models.DeleteArticle(id)
 			code = msg.SUCCESS
 		} else {
