@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96c87e10-1c41-44ec-b04c-d69a74628908" name="Default Changelist" comment="gin tow">
-      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gredis/redis.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/articleService.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/authService.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/cache/cache.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/cache/cache_article.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/cache/cache_tag.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/tagService.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/app/request.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/app/response.go" afterDir="false" />
+    <list default="true" id="96c87e10-1c41-44ec-b04c-d69a74628908" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.ini" beforeDir="false" afterPath="$PROJECT_DIR$/app.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/article.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/contorller/v1/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/contorller/v1/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,20 +58,20 @@
           <entry key="ini" value="72" />
           <entry key="json" value="3" />
           <entry key="md" value="25" />
-          <entry key="sh" value="43" />
-          <entry key="txt" value="14" />
+          <entry key="sh" value="44" />
+          <entry key="txt" value="20" />
           <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="43" />
+          <entry key="Bash" value="44" />
           <entry key="Dockerfile" value="321" />
           <entry key="Go" value="2697" />
           <entry key="Ini" value="72" />
           <entry key="JSON" value="3" />
           <entry key="Markdown" value="25" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="PLAIN_TEXT" value="20" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -140,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/build.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="11" />
+              <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -148,7 +135,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/articleService.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
+            <state relative-caret-position="572">
               <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
             </state>
           </provider>
@@ -175,8 +162,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service/tagService.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -427,7 +414,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15405117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -480,7 +466,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gin first" />
     <MESSAGE value="gin tow" />
-    <option name="LAST_COMMIT_MESSAGE" value="gin tow" />
+    <MESSAGE value="gin servic" />
+    <option name="LAST_COMMIT_MESSAGE" value="gin servic" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../github.com/jinzhu/gorm/main.go">
@@ -755,8 +742,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/tagService.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -769,7 +756,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/articleService.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="572">
           <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
         </state>
       </provider>
@@ -832,7 +819,7 @@
     <entry file="file://$PROJECT_DIR$/build.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="11" />
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
